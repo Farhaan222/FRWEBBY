@@ -1,0 +1,147 @@
+body
+{
+    background-image: url('lee-campbell-Pmw_LMwmOdU-unsplash.jpg');
+    object-fit: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw /*200vh*/;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    
+}
+form button{
+    color: black;
+    background-color: #66b3ff;
+    font-family: SHOWG;
+    font-size: 20px;
+    border:none;
+    border-radius: 20px;
+}
+.cursor
+{
+    background-color: #66b3ff;
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-40%,-30%);
+    pointer-events: none;
+    
+}
+.topic
+{
+    text-align: center;
+    position: absolute;
+    width:100%;
+    top:0px;
+    left:0px;
+    
+}
+.topic font 
+{
+    pointer-events: none;
+}
+form font {
+    pointer-events: none;
+}
+form a{
+    font-size: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #66b3ff;
+    font-family: SHOWG;
+    color:black;
+    pointer-events: auto;
+    
+}
+form a:any-link
+{
+    color: black;
+}
+form a:visited
+{
+    color: black;
+}
+@font-face
+{
+    src:url("LOBSTER.TTF");
+    font-family:LOBSTER;
+}
+@font-face
+{
+    src: url(SHOWG.TTF);
+    font-family:SHOWG;
+    
+}
+
+input
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+    
+    font-family: "SHOWG";
+    font-size: 18pt;
+    
+}
+.flex p
+{
+    margin:0;
+    font-size:25rem;
+    font-family: SHOWG;
+}
+.flex
+{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    
+}
+form
+{
+    position: relative;
+    top:80px;
+    color:#66b3ff;
+    font-size:20pt;
+    
+}
+.fr
+{
+    position: relative;
+    top: 40px;
+    margin: 0;
+    color: #F74356;
+    box-shadow: 15px 10px 30px ;
+    animation-name: farru;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    pointer-events: none;    
+}
+@keyframes farru{
+    0%{color: #66b3ff;}
+    25%{color: #F74356;}
+    50%{color: #8DAABA;}
+    75%{color: inherit;}
+}
+@media (max-width:900px)
+{
+    form
+    {
+        color: #F74356
+    }
+    .fr
+    {
+        display: none;
+    }
+    @media (max-width:500px){
+        body{
+            background-size: 100vh;
+            object-fit: contain;
+        }
+    }
+}

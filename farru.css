@@ -1,0 +1,264 @@
+body
+{
+    background-image: url('lee-campbell-Pmw_LMwmOdU-unsplash.jpg');
+    object-fit: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw /*200vh*/;
+    background-position: center;
+    padding: 0;
+    margin:0;    
+}
+.rest{
+    font-family:SHOWG;
+}
+form button{
+    color: black;
+    background-color: #66b3ff;
+    font-family: SHOWG;
+    font-size: 20px;
+    border:none;
+    border-radius: 20px;
+}
+.cursor
+{
+    background-color: #66b3ff;
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-40%,-30%);
+    pointer-events: none;
+    
+}
+p
+{
+    position: relative;
+    top:40px;
+    margin: 0;
+    font-size: 25rem;
+    color: #66b3ff;
+    font-family: SHOWG;
+    box-shadow: 15px 10px 30px ;
+    animation-name: farru;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes farru{
+    0%{color: #66b3ff;}
+    25%{color: #F74356;}
+    50%{color: #8DAABA;}
+    75%{color: #BAE1F2;}
+
+}
+@font-face
+{
+    src: url(SHOWG.TTF);
+    font-family:SHOWG;
+}
+@font-face
+{
+    src:url("LOBSTER.TTF");
+    font-family:LOBSTER;
+}
+
+h3
+{
+    font-family:"Showcard Gothic";
+    text-align:right
+    
+}
+.flex1
+{
+    display:none;
+}
+#sign
+{
+    border-radius: 8px;
+    padding:5px;
+    text-decoration: none;
+    background-color:#66b3ff ;
+}
+img
+{
+    margin-left: -100px;
+}
+
+input
+{
+    border-radius: 10px;
+    font-size: 18pt;
+    border-color: white;
+}
+.navvybar
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: inherit ;
+    
+}
+.navvybar a
+{
+    padding: 20px;
+    font-size: 15pt;
+    font-family: SHOWG;
+    color: white;
+    text-decoration: none;
+}
+.navvybar a:hover
+{
+    transition-timing-function: ease;
+    transition-duration: .5s;
+    background-color: #F74356;
+}
+.flex
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+form a
+{
+    font-size: 15pt;
+    font-family: SHOWG;
+    
+}
+form font {
+    pointer-events: none;
+}
+form a:visited{
+    color: black;
+    
+}
+.title font {
+    pointer-events: none;
+}
+form a:any-link{
+    color: black;
+}
+
+/*!!!!!!!!!!!!!! NAV BAR !!!!!!!!!!!!!!!!!!*/
+@media (max-width:900px){
+    p[class="fr"]
+    {
+        display: none;
+    }
+    @media (max-width:500px)
+{
+    body{
+        background-size: 100vh;
+        object-fit: contain;
+    }
+    .flex1
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: inherit;
+        
+    }
+    .title
+    {
+        padding-left:10px;
+        
+    }
+    .flex1 .button
+    {
+        position: absolute;
+        right: 10px;
+        font-size:30px;
+        text-decoration: none;
+        border-radius:8px;
+        color:#66b3ff; 
+        cursor: pointer;
+    }
+    .flex1 a:visited
+    {
+        color:#66b3ff        
+    }
+    .navvybar
+    {
+        margin: 0;
+        height: 0vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        transform-origin: top;
+        background-color: #f62338;
+        z-index: 3;
+        overflow: hidden;
+        
+    }
+    @font-face {
+        font-family: Nota;
+        src: url("NotoSansJP-Regular.otf");
+    }
+    .navvybar a
+    {
+        font-size: 15pt;
+        text-decoration: none;
+        color: white;
+        font-family:Nota;
+        padding: 10px;
+        width: 100%;  
+    }
+    
+    .navvybar a:hover{
+        background-color: #66b3ff;
+        transition: none;
+    }
+    .navvybar.active
+    {
+        animation-name: farru;
+        animation-duration: .5s;
+        display: flex;
+        animation-timing-function: ease-in-out;
+        height: 31vh;
+        position: absolute;
+        width: 100%;
+        font-size: 0px;
+        transform: scaleY(1);
+        overflow: hidden;
+    }
+    @keyframes farru {
+        from{
+            transform: scaleY(0);
+        }
+        to
+        {
+            transform: scaleY(1);
+        }
+        
+    }
+    
+    
+    
+    form a
+    {
+    cursor: pointer;
+    }
+}
+
+
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

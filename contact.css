@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color:  rgb(48, 113,133);
+    cursor: default;
+    font-family: alata;
+}
+@font-face{
+    src: url("Alata-Regular.ttf");
+    font-family: alata;
+}
+h1{
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h3 .location{
+    padding: 20px;
+}
+h3 .mail{
+    padding: 20px;
+}
+h3 .phno{
+    padding: 20px;
+}
+.fas{
+    color:#66b3ff;  
+}
+.fr{
+    animation-name:fwebby;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color:#F74356;
+    font-size:40px;
+    font-family: "SHOWG";
+    box-shadow: 5px 0px 10px ;
+    cursor: pointer;
+    margin-left: 20px;
+}
+@keyframes fwebby
+{
+    0%{color: #66b3ff;}
+    25%{color: #F74356;}
+    50%{color: #8DAABA;}
+    75%{color: #BAE1F2;}
+}
+.fa{
+    color:#F74356;
+    font-size:30px;
+
+}
+.location{
+    color: black;
+}
+.mail{
+    color:black;
+}

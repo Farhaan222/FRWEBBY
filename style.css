@@ -1,0 +1,353 @@
+body{
+    background-color: rgb(48, 113,133);
+    margin:0;
+    padding:0;
+    background-image: url("maintenance.png");
+    background-size: 60vw;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 15vh;
+    animation-name: bg;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-play-state: initial;
+}
+.navvy{
+    font-family:alata;
+}
+.nav .line{
+    background-color:whitesmoke;
+    margin:5px;
+    width: 30px;
+    height: 5px;
+    display: none;
+    cursor: pointer;
+}
+@font-face{
+    src: url("Alata-Regular.ttf");
+    font-family: alata;
+}
+@keyframes bg{
+    from{background-size: 0vw;}
+    to{background-size: 60vw;}
+}
+h3{
+    position: relative;
+    top:40vw;
+    font-size:100px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: alata;
+}
+.info{
+    position: relative;
+    top:35vw;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin:20px;
+}
+.heading a{
+    font-size:25px;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+}
+.heading a:hover{
+    background: linear-gradient(to bottom, rgb(147,20,153),rgb(185, 46, 192));
+    cursor: pointer;
+}
+@keyframes fwebby
+{
+    0%{color: #66b3ff;}
+    25%{color: #F74356;}
+    50%{color: #8DAABA;}
+    75%{color: #BAE1F2;}
+
+}
+.heading .fr{
+    animation-name:fwebby;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color:#F74356;
+    font-size:40px;
+    font-family: "SHOWG";
+    box-shadow: 5px 0px 10px ;
+    cursor: pointer;
+}
+
+@font-face
+{
+    src:url("SHOWG.TTF");
+    font-family:SHOWG;
+}
+@font-face{
+    src: url("DancingScript-VariableFont_wght.ttf");
+    font-family: Lobby;
+}
+.frontend{
+    background-color: white;
+    box-shadow: -5px -10px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Lobby;
+    color:rgb(48, 113,133);
+    width:100%;
+}
+.backend{
+    width:100%; 
+    background-color: #F14C38;
+    box-shadow: -5px -10px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Lobby;
+    color:rgb(48, 113,133);
+}
+.frontend .bar{
+    width: 200px;
+    height: 20px;
+    background-color:black;
+    box-sizing: border-box;
+    box-shadow:0px 0px 20px black;
+    border:2px solid ;
+    border-radius: 10px;
+}
+.backend .bar{
+    width: 200px;
+    height: 20px;
+    background-color:black;
+    box-sizing: border-box;
+    box-shadow:0px 0px 20px black;
+    border:2px solid ;
+    border-radius: 10px;
+}
+.bar .b1{
+    width: 85%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b6{
+    width: 50%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b7{
+    width: 50%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b8{
+    width: 70%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b9{
+    width: 85%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b5{
+    width: 100px;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b4{
+    width: 30%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b3{
+    width: 60%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.bar .b2{
+    width: 90%;
+    height:100%;
+    background-color: rgb(48, 113,133);
+    box-sizing: border-box;
+    border-radius:5px;
+    /*transform: translate(70% ,-80%);*/
+    
+}
+.html{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    /*background-color: blue;*/
+    width:40vw;
+
+}
+.css{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:40vw;
+
+
+}
+.css .bar{
+    margin-left:38px;
+}
+.angular{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:40vw;
+
+}
+.js{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:40vw;
+}
+.angularjs{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:40vw;
+}
+.specials{
+    font-family: Lobby;
+    display:flex;
+    justify-content: center;
+}
+.specials h1{
+    font-size: 50px;
+
+}
+.specials{
+    font-size:30px;
+}
+.footer{
+    background-color: rgb(139,145,145);
+    padding :20px;
+    margin:0;
+    font-family: alata;
+}
+@media (max-width:800px)
+{
+    .nav .line{
+        display: block;
+    }
+    .heading{
+        display: inline;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .navvy{
+        display: none;
+        position: absolute;
+        background:radial-gradient(rgba(147,20,153,0),rgb(16, 131, 255));
+
+    }
+    .navvy.active{
+        display: block;
+        animation-name: navvy;
+        animation-duration:.3s ;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count:initial;
+
+    }
+    @keyframes navvy{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;;
+        }
+        
+    }
+    .heading a{
+        width: 94.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading a:hover{
+        background:black;
+    }
+    body{
+        background-size: 80vh;
+        animation-name: bg1;
+        animation-timing-function: ease-in-out;
+        animation-duration: .5s;
+        animation-iteration-count: initial;
+        animation-play-state: initial;
+    }
+    @keyframes bg1{
+        from{
+            background-size: 0vh;
+        }
+        to{
+            background-size: 80vh;
+        }
+    }
+    h3{
+        top:55vw;
+    }
+    .html{
+        width: 100%;
+    }
+    .css{
+        width: 100%;
+    }
+    .angular{
+        width: 100%;
+    }
+    .angularjs{
+        width: 100%;
+    }
+    .js{
+        width:100%;
+    }
+}

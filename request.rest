@@ -1,0 +1,6 @@
+GET http://localhost:3000/home/signin/
+
+###
+POST http://localhost:3000/home/signin/
+Content-Type: application/json
+

@@ -1,0 +1,17 @@
+body{
+    margin:0;
+}
+@font-face{
+    src: url('Alata-Regular.ttf');
+    font-family: alata;
+} 
+h1{
+    font-size: 80px;
+    font-family: alata;
+}
+@media (max-width:800px){
+    h1{
+        font-size:40px;
+    }
+}
+    

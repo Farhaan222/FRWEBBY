@@ -1,0 +1,59 @@
+body{
+    background-color:rgba(152,152,152,.8);
+    margin:0;
+    padding:0;
+}
+img{
+    width:100%;
+    height:150vw;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: alata;
+}
+.heading{
+    
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: alata;
+}
+.heading a{
+    padding:20px;
+    text-decoration:none;
+    color:black;
+    font-size:20px;
+}
+.heading .fr{
+    padding: 0px;
+    animation-name:fwebby;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color:#F74356;
+    font-size:40px;
+    font-family: "SHOWG";
+    box-shadow: 5px 0px 10px ;
+    cursor: pointer;
+    margin-left: 20px;
+}
+@keyframes fwebby
+{
+    0%{color: #66b3ff;}
+    25%{color: #F74356;}
+    50%{color: #8DAABA;}
+    75%{color: #BAE1F2;}
+}
+.heading a:hover{
+    background-color:rgba(152, 152, 152, 1);
+
+}
+@font-face{
+    src:url("Alata-Regular.ttf");
+    font-family:alata;
+}
+@font-face{
+    src:url("SHOWG.ttf");
+    font-family: SHOWG;
+}

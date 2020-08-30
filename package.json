@@ -1,0 +1,32 @@
+{
+  "name": "background-animation",
+  "version": "1.0.0",
+  "description": "I'm so confused of selecting background animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farhaan222/Background-animation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farhaan222/Background-animation/issues"
+  },
+  "homepage": "https://github.com/Farhaan222/Background-animation#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "knex": "^0.21.5",
+    "lodash": "^4.17.19",
+    "passport": "^0.4.1",
+    "pg": "^8.3.3",
+    "sweet-auth": "^1.0.3"
+  }
+}

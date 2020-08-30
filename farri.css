@@ -1,0 +1,23 @@
+body
+{
+   /*background: linear-gradient(to right,#66b3ff,white);*/
+   background-image: url('lee-campbell-Pmw_LMwmOdU-unsplash.jpg');
+   object-fit: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: 100vw /*200vh*/;
+   background-position: center;
+    padding: 0;
+    margin:0;
+}
+.cursor
+{
+    background-color: #66b3ff;
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-40%,-30%);
+    pointer-events: none;
+    
+}

@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="farru2.css">
+        <script src="farru2.js" defer> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-title">F webby</div>
+            <a href="#" class="toggle-button"><font size="10pt">&#9776</font></a>
+            <div class="navbar-links">
+            <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            </ul>    
+            </div>
+        </nav>
+        <h1>Angular javascript</h1>
+        <div ng-app="">
+            <h3>name : <textarea name="name" ng-model = "name" row="1"></textarea></h3>
+            <h1 ng-bind="name" ></h1>
+        </div>
+    </body>
+</html>
