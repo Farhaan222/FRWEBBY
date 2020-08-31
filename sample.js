@@ -31,16 +31,16 @@ const db = knex({
       database : 'frwebby'
     }
   });
-app.get('/home/contact',(req,res) => {
+app.get('/contact',(req,res) => {
     res.render('contact.ejs');
 });
-app.get('/home',function(req,res){
+app.get('/',function(req,res){
     res.render('home.ejs');
 });
-app.get('/home/signin', checkAuthenticated, function(req,res){
+app.get('/signin', checkAuthenticated, function(req,res){
     res.render('sign in.ejs')
 });
-app.post('/home/signin',async (req,res) => {
+app.post('/signin',async (req,res) => {
       
     db.select('*').from('Signin').where('emaill', '=', req.body.email).then((data) => {
         var sigpass = bcrypt.compareSync(req.body.password , data[0].hashedpasswordd);
@@ -71,12 +71,12 @@ function checkNotAuthenticated(req, res, next){
         return next();
     }
 }
-app.get('/home/signup',checkAuthenticated ,function(req,res){
+app.get('/signup',checkAuthenticated ,function(req,res){
     /*res.sendFile(path.join(__dirname,"farru1.html"))*/
     res.render('signup.ejs');
 
 });
-app.post('/home/signup',async (req,res) => 
+app.post('/signup',async (req,res) => 
 {
         var email = req.body.email;
         var name = req.body.name;
@@ -98,7 +98,7 @@ app.post('/home/signup',async (req,res) =>
  
         
 });
-app.get('/home/content',checkNotAuthenticated,(req,res) => {
+app.get('/content',checkNotAuthenticated,(req,res) => {
     res.render('content.ejs')
 })
 const PORT = process.env.PORT || 3000;
