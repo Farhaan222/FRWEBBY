@@ -52,14 +52,14 @@ app.post('/signin',async (req,res) => {
         res.render('error.ejs');
     });
     passport.authenticate("local",{
-        successRedirect: "/users/content",
-        failureRedirect: "/home/signin",
+        successRedirect: "/content",
+        failureRedirect: "/signin",
         failureFlash: true
     })
 });
 function checkAuthenticated(req,res,next){
     if(req.isAuthenticated()){
-        return res.redirect("/home/content")
+        return res.redirect("/content")
     }
     next();
 
@@ -81,12 +81,12 @@ app.post('/signup',async (req,res) =>
         var password = req.body.password;
         var hashedPassword = await bcrypt.hash(password, 10);
         var phoneno = req.body.phoneno;
-        db('Signin').insert({
+        db('signin').insert({
                 emaill : email,
                 hashedpasswordd : hashedPassword,
             })
             .then(res.status(200))
-        db('Frwebby').insert({
+        db('frwebby').insert({
             id:Date.now().toString(),
             email: email,
             name : name ,
