@@ -4,7 +4,7 @@
   "description": "I'm so confused of selecting background animation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon sample.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,6 @@
     "express-flash": "0.0.2",
     "express-session": "^1.17.1",
     "knex": "^0.21.5",
-    "lodash": "^4.17.19",
     "passport": "^0.4.1",
     "pg": "^8.3.3",
     "sweet-auth": "^1.0.3"
