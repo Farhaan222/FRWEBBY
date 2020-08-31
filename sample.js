@@ -86,7 +86,7 @@ app.post('/signup',async (req,res) =>
                 hashedpasswordd : hashedPassword,
             })
             .then(res.status(200))
-        db('Frwebby table').insert({
+        db('Frwebby').insert({
             id:Date.now().toString(),
             email: email,
             name : name ,
