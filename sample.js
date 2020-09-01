@@ -100,7 +100,7 @@ app.post('/signup',async (req,res) =>
         var password = req.body.password;
         var hashedPassword = await bcrypt.hash(password, 10);
         var phoneno = req.body.phoneno;
-        db('Signin').insert({
+        db('signin').insert({
                 emaill : email,
                 hashedpasswordd : hashedPassword,
             }).then(res.status(200)).catch((err) => { res.status(500);
