@@ -21,6 +21,7 @@ const { pool } = require('./database.js');
     saveUninitialized: true,
     cookie: { secure: true }
   }));*/
+process.env.NODE_TLS_REJECT_UNAUTHORIZED='0'
 app.set('trust proxy', 1);
 
 app.use(session({
@@ -43,7 +44,7 @@ app.use(flash());
 const db = knex({
     client: 'pg',
     connection: {
-      connectionString : process.env.DATABASE_URL,
+      connectionString : "postgres://ydxubzzvvgpjjb:03aec913c660be264a9c9d23b98f5966ad9be1f5042b11cc48cf71988689508d@ec2-107-20-15-85.compute-1.amazonaws.com:5432/dgpbi0av7j418",
       ssl:true,
     }
   });
@@ -94,7 +95,6 @@ app.get('/signup',checkAuthenticated ,function(req,res){
 });
 app.post('/signup',async (req,res) => 
 {
-    try{
         var email = req.body.email;
         var name = req.body.name;
         var password = req.body.password;
@@ -103,20 +103,17 @@ app.post('/signup',async (req,res) =>
         db('Signin').insert({
                 emaill : email,
                 hashedpasswordd : hashedPassword,
-            })
-            .then(res.status(200))
+            }).then(res.status(200)).catch((err) => { res.status(500);
+                throw err});
         db('frwebby').insert({
             id:Date.now().toString(),
             email: email,
             name : name ,
             password :hashedPassword,
             phoneno : phoneno,
-            }).then(res.status(200).render('content.ejs'));
-        }
-        catch{
-            res.status(500).end();
-        }
-        
+            }).then(res.status(200).render('content.ejs')).catch((err) => {
+                res.status(500);
+                throw err});
 });
 app.get('/content',checkNotAuthenticated,(req,res) => {
     res.render('content.ejs')
