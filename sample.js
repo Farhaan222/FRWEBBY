@@ -15,12 +15,31 @@ const flash = require("express-flash");
 var session =require('express-session');
 const { request } = require('http');
 const { pool } = require('./database.js');
-app.use(session({
+/*app.use(session({
     secret: 'secret',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: true }
-  }));
+  }));*/
+app.set('trust proxy', 1);
+
+app.use(session({
+  cookie:{
+      secure: true,
+      maxAge:60000
+         },
+  store: new RedisStore(),
+  secret: 'secret',
+  saveUninitialized: true,
+  resave: false
+}));
+  
+app.use(function(req,res,next){
+    if(!req.session){
+        return next(new Error('Oh no')) //handle error
+    }
+    next() //otherwise continue
+});
 app.use(flash());
 const db = knex({
     client: 'pg',
