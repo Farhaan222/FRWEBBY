@@ -26,9 +26,8 @@ app.set('trust proxy', 1);
 app.use(session({
   cookie:{
       secure: true,
-      maxAge:60000
+      maxAge:60000,
          },
-  store: new RedisStore(),
   secret: 'secret',
   saveUninitialized: true,
   resave: false
