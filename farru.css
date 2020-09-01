@@ -94,7 +94,9 @@ input
     border-radius: 10px;
     font-size: 18pt;
     border-color: white;
+    width:300px;
 }
+
 .navvybar
 {
     display: flex;
