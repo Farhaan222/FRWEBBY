@@ -18,7 +18,7 @@ const { pool } = require('./database.js');
 app.use(session({
     secret: 'secret',
     resave: false,
-    saveUninitialized: false,
+    saveUninitialized: true,
     cookie: { secure: true }
   }));
 app.use(flash());
@@ -76,6 +76,7 @@ app.get('/signup',checkAuthenticated ,function(req,res){
 });
 app.post('/signup',async (req,res) => 
 {
+    try{
         var email = req.body.email;
         var name = req.body.name;
         var password = req.body.password;
@@ -92,8 +93,11 @@ app.post('/signup',async (req,res) =>
             name : name ,
             password :hashedPassword,
             phoneno : phoneno,
-            }).then(res.status(200).render('content.ejs'))
- 
+            }).then(res.status(200).render('content.ejs'));
+        }
+        catch{
+            res.status(500).end();
+        }
         
 });
 app.get('/content',checkNotAuthenticated,(req,res) => {
