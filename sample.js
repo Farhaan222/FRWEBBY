@@ -19,14 +19,14 @@ app.use(session({
     secret: 'secret',
     resave: false,
     saveUninitialized: false,
-    //cookie: { secure: true }
+    cookie: { secure: true }
   }));
 app.use(flash());
 const db = knex({
     client: 'pg',
     connection: {
       connectionString : process.env.DATABASE_URL,
-      ssl:true
+      ssl:true,
     }
   });
 app.get('/contact',(req,res) => {
@@ -40,7 +40,7 @@ app.get('/signin', checkAuthenticated, function(req,res){
 });
 app.post('/signin',async (req,res) => {
       
-    db.select('*').from('Signin').where('emaill', '=', req.body.email).then((data) => {
+    db.select('*').from('signin').where('emaill', '=', req.body.email).then((data) => {
         var sigpass = bcrypt.compareSync(req.body.password , data[0].hashedpasswordd);
         if(sigpass === true){
             res.render('content.ejs');
@@ -81,7 +81,7 @@ app.post('/signup',async (req,res) =>
         var password = req.body.password;
         var hashedPassword = await bcrypt.hash(password, 10);
         var phoneno = req.body.phoneno;
-        db('signin').insert({
+        db('Signin').insert({
                 emaill : email,
                 hashedpasswordd : hashedPassword,
             })
