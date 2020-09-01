@@ -24,9 +24,9 @@
     "express-flash": "0.0.2",
     "express-session": "^1.17.1",
     "knex": "^0.21.5",
+    "nodemon": "^2.0.4",
     "passport": "^0.4.1",
     "pg": "^8.3.3",
-    "sweet-auth": "^1.0.3",
-    "nodemon": "^2.0.4"
+    "sweet-auth": "^1.0.3"
   }
 }
