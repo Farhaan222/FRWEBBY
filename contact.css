@@ -6,6 +6,10 @@ body{
     font-family: alata;
 }
 @font-face{
+    src:url("SHOWG.ttf");
+    font-family: SHOWG;
+}
+@font-face{
     src: url("Alata-Regular.ttf");
     font-family: alata;
 }
@@ -45,7 +49,7 @@ h3 .phno{
     animation-iteration-count: infinite;
     color:#F74356;
     font-size:40px;
-    font-family: "SHOWG";
+    font-family: SHOWG;
     box-shadow: 5px 0px 10px ;
     cursor: pointer;
     margin-left: 20px;
@@ -57,7 +61,7 @@ h3 .phno{
     50%{color: #8DAABA;}
     75%{color: #BAE1F2;}
 }
-.fa{
+.fr{
     color:#F74356;
     font-size:30px;
 

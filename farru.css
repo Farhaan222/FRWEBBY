@@ -20,6 +20,9 @@ form button{
     border:none;
     border-radius: 20px;
 }
+.lobby{
+    font-family: LOBSTER;
+}
 .cursor
 {
     background-color: #66b3ff;
@@ -147,44 +150,30 @@ form a:any-link{
     {
         display: none;
     }
-    @media (max-width:500px)
-{
-    body{
-        background-size: 100vh;
-        object-fit: contain;
-    }
     .flex1
     {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: inherit;
-        
+        margin:10px;
+    }
+    .flex1 a{
+        color:#F74356;
+        font-size:45px;
+        cursor: pointer;
+
     }
     .title
     {
         padding-left:10px;
         
     }
-    .flex1 .button
-    {
-        position: absolute;
-        right: 10px;
-        font-size:30px;
-        text-decoration: none;
-        border-radius:8px;
-        color:#66b3ff; 
-        cursor: pointer;
-    }
-    .flex1 a:visited
-    {
-        color:#66b3ff        
-    }
     .navvybar
     {
         margin: 0;
         height: 0vh;
-        display:flex;
+        display:none;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
@@ -233,23 +222,21 @@ form a:any-link{
         {
             transform: scaleY(1);
         }
-        
     }
-    
-    
-    
-    form a
+    @media (max-width:500px)
     {
-    cursor: pointer;
+        body{
+            background-size: 100vh;
+            object-fit: contain;
+        }
     }
 }
-
-
-}
-
-
     
     
+    
+    
+    
+        
     
     
     

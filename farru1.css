@@ -74,6 +74,12 @@ form a:visited
     font-family:SHOWG;
     
 }
+.lobby{
+    font-family: LOBSTER;
+}
+.rest{
+    font-family:SHOWG;
+}
 
 input
 {
@@ -120,7 +126,8 @@ form
     animation-duration: 10s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
-    pointer-events: none;    
+    pointer-events: none; 
+    font-family: SHOWG;   
 }
 @keyframes farru{
     0%{color: #66b3ff;}
