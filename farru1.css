@@ -65,12 +65,12 @@ form a:visited
 }
 @font-face
 {
-    src:url("LOBSTER.TTF");
+    src:url("LOBSTER.ttf");
     font-family:LOBSTER;
 }
 @font-face
 {
-    src: url(SHOWG.TTF);
+    src: url("SHOWG.TTF");
     font-family:SHOWG;
     
 }

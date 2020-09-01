@@ -58,12 +58,12 @@ p
 }
 @font-face
 {
-    src: url(SHOWG.TTF);
+    src: url("SHOWG.TTF");
     font-family:SHOWG;
 }
 @font-face
 {
-    src:url("LOBSTER.TTF");
+    src:url("LOBSTER.ttf");
     font-family:LOBSTER;
 }
 
